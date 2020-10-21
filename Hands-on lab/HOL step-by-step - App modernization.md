@@ -416,7 +416,10 @@ In this task, you use the Azure Cloud shell to retrieve the IP address of the Sq
    az vm list-ip-addresses -g $resourceGroup -n SqlServer2008 --output table
    ```
 
-   > **Note**: If you have multiple Azure subscriptions, and the account you are using for this hands-on lab is not your default account, you may need to run `az account list --output table` at the Azure Cloud Shell prompt to output a list of your subscriptions, then copy the Subscription Id of the account you are using for this lab, and then run `az account set --subscription <your-subscription-id>` to set the appropriate account for the Azure CLI commands.
+ > **Note**: The name of your VM with the SQL server is different if you work in the provisioned lab environment. Use ```-n Sql2008-*****```
+ The right name can be obtained from the resource list in the Azure portal.
+
+> **Note**: If you have multiple Azure subscriptions, and the account you are using for this hands-on lab is not your default account, you may need to run `az account list --output table` at the Azure Cloud Shell prompt to output a list of your subscriptions, then copy the Subscription Id of the account you are using for this lab, and then run `az account set --subscription <your-subscription-id>` to set the appropriate account for the Azure CLI commands.
 
 7. Within the output of the command above, locate and copy the value of the `ipAddress` property within the `publicIPAddresses` object. Paste the value into a text editor, such as Notepad.exe, for later reference.
 
@@ -814,6 +817,10 @@ In this task, you use the Azure Cloud Shell and Azure Command Line Interface (CL
 5. In the output table, locate the subscription you are using for this hands-on lab, and copy the SubscriptionId value into a text editor, such as Notepad, for use below.
 
 6. Next, enter the following `az ad sp create-for-rbac` command at the Cloud Shell prompt, replacing `<your-subscription-id>` with the value you copied above and `<your-resource-group-name>` with the name of your **hands-on-lab-SUFFIX** resource group, and then press `Enter` to run the command.
+This command sets the read permission on the resource group.
+>NOTE: If you are working in the lab environment, you might get following error: 
+"Insufficient privileges to complete the operation."
+In that case go to taks 4.
 
    ```powershell
    $subscriptionId = "<your-subscription-id>"
