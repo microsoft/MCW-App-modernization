@@ -396,7 +396,9 @@ In this task, you use the Azure Cloud shell to retrieve the IP address of the Sq
 
    ![In the You have no storage mounted dialog, a subscription has been selected, and the Create Storage button is highlighted.](media/cloud-shell-create-storage.png "Azure Cloud Shell")
 
-   > **Note**: If creation fails, you may need to select **Advanced settings** and specify the subscription, region and resource group for the new storage account.
+   > **Note**: If creation fails, you may need to select **Advanced settings** and specify the subscription, region and resource group for the new storage account. This will create the new storage account for the shell.
+   Alternatively, you can create the new storage account on your own. In that case please use 'locally redundant zone', because other options are disabled by the policy.
+
 
 4. After a moment, a message that you have successfully requested a Cloud Shell appears, and a PS Azure prompt is displayed.
 
