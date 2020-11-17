@@ -112,8 +112,8 @@
                     },
                     "imageReference": {
                         "publisher": "microsoftvisualstudio",
-                        "offer": "visualstudio2019latest",
-                        "sku": "vs-2019-comm-latest-ws2019",
+                        "offer": "visualstudio2019",
+                        "sku": "vs-2019-ent-ws2019",
                         "version": "latest"
                     }
                 },
