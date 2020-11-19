@@ -1071,6 +1071,10 @@ In this task, you use Visual Studio to deploy the API project into an API App in
 
    > If you don't see the **Web Publish Activity** view, you can find it on View menu-> Other Windows -> Microsoft Azure Activity Log.
 
+   > If you experience an error saying "MSB4018 The "RazorTagHelper" task failed unexpectedly", please add the following environment variable to VM, restart visual and publish again:
+      Variable: DOTNET_HOST_PATH
+      Value: dotnet
+
 8. A web browser should open to the published site. If not, open the URL of the published Web API in a browser window. Initially, you should see a message that the page cannot be found.
 
    ![A page can't be found error message is displayed in the web browser.](media/web-api-publish-page-not-found.png "Page not found")
