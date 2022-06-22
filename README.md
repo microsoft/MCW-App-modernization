@@ -1,5 +1,5 @@
 # Retirement notice
-This workshop will be retired effective July 30, 2022. At that time the repository will be archived, and the materials will not be maintained.
+This workshop will be retired effective August 30, 2022. At that time the repository will be archived, and the materials will not be maintained.
 
 For questions or concerns regarding the MCW library, email us at [AskMCW](mailto:AskMCW@microsoft.com). Please remember to include the title of the workshop in your email.
 
