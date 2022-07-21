@@ -6,7 +6,7 @@
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Azure.Storage.Blobs" Version="12.8.0" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.13.0" />
     <PackageReference Include="Azure.Storage.Queues" Version="12.6.0" />
     <PackageReference Include="Bogus" Version="30.0.4" />
     <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.0.0" />
